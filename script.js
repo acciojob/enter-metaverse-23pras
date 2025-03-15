@@ -1,11 +1,7 @@
-//your JS code here. If required.
-
-let ptag = document.getElementById('status');
+let pTag = document.getElementById("status");
 let button = document.getElementById("enterBtn");
 
-button.addEventListener("click",()=>{
-	  let h1Tag = document.createElement("h1");
-      h1Tag.textContent = "Entered Metaverse";
-
-      ptag.replaceWith(h1Tag);
-})
+button.addEventListener("click", () => {
+  // Instead of replacing, we change the inner HTML
+  pTag.innerHTML = "<h1>Entered Metaverse</h1>";
+});
